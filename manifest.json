@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Geronimo",
+  "version": "1.0",
+  "author": "YellowDi <yellowdi@me.com> (http://yellowdi.github.io)",
+  "description": "一个将知乎的 UI 扁平化的 Chrome 扩展",
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
+  "permissions": [],
+  "content_scripts": [{
+    "matches": [
+      "http://zhihu.com/*",
+      "http://www.zhihu.com/*"
+    ],
+    "js": [
+
+    ],
+    "css": [
+      "css/card.css"
+    ]
+  }]
+}
